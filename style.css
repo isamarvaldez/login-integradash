@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    background-color: #003D73;
+
+
+
+
+}
+
+.esquerda {
+    width: 40%;
+    background-color: #ffff;
+    height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+
+
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 90%;
+
+
+
+}
+
+.conteudo_login {
+
+    width: 70%;
+    padding: 30px;
+    align-items: center;
+    /*background-color: white;*/
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+
+
+
+
+}
+
+.conteudo_login img {
+    width: 200px;
+    margin: 70px;
+
+}
+
+form label {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    margin: 8px 0;
+
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+   
+}
+
+
+
+.possicionamento_checkbox {
+
+    display: flex;
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.label {
+    margin-left: 18px;
+}
+
+button {
+    background-color: #1B77C2;
+    color: white;
+    height: 40px;
+
+}
+
+form p {
+    color: #C1C3C8;
+}
+
+.esqueceu {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rodape {
+    margin-top: 100px;
+}
+
+.direito {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.direito img {
+    display: flex;
+    align-items: end;
+    width: 90%;
+    height: 100%;
+
+
+}
+.olho{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+
+
+}
+.olho img{
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    right: -50px;
+}
