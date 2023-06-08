@@ -16,7 +16,7 @@ body {
 }
 
 .esquerda {
-    width: 40%;
+    width: 50%;
     background-color: #ffff;
     height: 100vh;
     display: flex;
@@ -25,18 +25,15 @@ body {
     align-items: center;
     flex-direction: column;
 
-
-
-
-
 }
 
 form {
 
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: 90%;
+    max-height: 400px;
+    
+    width: 100%;
 
 
 
@@ -45,25 +42,37 @@ form {
 .conteudo_login {
 
     width: 70%;
-    padding: 30px;
+    
     align-items: center;
     /*background-color: white;*/
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 600px;
+    max-height: 600px;
+    height: 70%;
 
 
 
 
+}
+
+.imagen1{
+    display: flex;
+    justify-content: center;
 }
 
 .conteudo_login img {
-    width: 200px;
+    max-width: 200px;
+    width: 50%;
     margin: 70px;
 
 }
+
+.imagen2 img {
+    display: none;
+}
+
 
 form label {
     font-size: 15px;
@@ -75,7 +84,7 @@ form label {
 form input {
     width: 100%;
     height: 40px;
-   
+
 }
 
 
@@ -109,6 +118,10 @@ form p {
     margin-top: 5px;
     display: flex;
     justify-content: flex-end;
+    
+}
+.esqueceu a{
+    text-decoration: none;
 }
 
 .rodape {
@@ -116,7 +129,7 @@ form p {
 }
 
 .direito {
-    width: 60%;
+    width: 50%;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
@@ -131,20 +144,87 @@ form p {
 
 
 }
-.olho{
+
+.olho {
     width: 100%;
     height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    
+
 
 
 }
-.olho img{
+
+.olho img {
     width: 20px;
     height: 15px;
     position: absolute;
     right: -50px;
+}
+
+@media screen and (max-width: 796px) {
+    .direito img {
+        width: 100%;
+        height: unset;
+
+    }
+    
+
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        flex-direction: column;
+    }
+
+
+    .direito {
+        display: none;
+
+    }
+
+    .esquerda {
+        background-image: url(../Integradash/img/Fundo\ dash.png);
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .rodape{
+        display: none;
+    }
+    .esqueceu p{
+        color: #343637;
+
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+    .conteudo_login {
+        width: 90%;
+
+    }
+
+    .conteudo_login img {
+        display: none;
+
+    }
+
+    .imagen2 img {
+        display: flex;
+        
+        width: 100%;
+
+    }
+
+    .imagen2 {
+        display: flex;
+        justify-content: center;
+
+    }
+    
+
+    
 }
